@@ -1,0 +1,17 @@
+{% extends "employee_register/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">Employee Form</h2>
+    <form action="" method="post" autocomplete="off">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="{% url 'employee_list' %}" class="btn btn-secondary ml-2">Back to List</a>
+    </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,18 @@
+# Ignore the virtual environment folder
+venv/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore environment variables and sensitive data
+.env
+
+# Ignore database files (if using SQLite for local testing)
+*.sqlite3
+
+# Ignore compiled files and IDE settings
+*.log
+*.pot
+*.pyc
+.idea/
